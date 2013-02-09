@@ -1,0 +1,32 @@
+{
+  "name": "Roundcube",
+  "description": "Open source webmail software",
+  "version": "0.8.5",
+  "type": "privileged",
+  "launch_path": "/",
+  "icons": {
+    "48": "/icon48.png"
+  },
+  "developer": {
+    "name": "Kload",
+    "url": "http://dev.yunohost.org"
+  },
+  "locales": {
+    "fr": {
+      "description": "Webmail open source"
+    }
+  }
+  "default_locale": "en",
+  "yunohost": {
+    "uid": "roundcube.yunohost",
+    "script_patch": "/scripts",
+    "db": {
+      "has_mysql_db": "true",
+      "mysql_init_script": "/SQL/mysql.initial.sql"
+    },
+    "access_control": {
+      "can_be_public": "no",
+      "can_be_protected": "yes"
+    }
+  }
+}
