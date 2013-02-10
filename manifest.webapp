@@ -2,7 +2,7 @@
   "name": "Roundcube",
   "description": "Open source webmail software",
   "version": "0.8.5",
-  "type": "privileged",
+  "type": "web",
   "launch_path": "/",
   "icons": {
     "48": "/icon48.png"
@@ -15,10 +15,10 @@
     "fr": {
       "description": "Webmail open source"
     }
-  }
+  },
   "default_locale": "en",
   "yunohost": {
-    "uid": "roundcube.yunohost",
+    "uid": "roundcube_ynh",
     "script_patch": "/scripts",
     "db": {
       "has_mysql_db": "true",
