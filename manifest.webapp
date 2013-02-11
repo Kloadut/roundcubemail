@@ -11,6 +11,9 @@
     "name": "Kload",
     "url": "http://dev.yunohost.org"
   },
+  "dependencies": {
+    "debian": [ "php5-gd", "php5-intl", "php5-mcrypt", "php5-pspell" ]
+  },
   "locales": {
     "fr": {
       "description": "Webmail open source"
