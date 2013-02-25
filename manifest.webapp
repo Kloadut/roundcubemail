@@ -23,13 +23,15 @@
   "yunohost": {
     "uid": "roundcube_ynh",
     "script_patch": "/scripts",
-    "db": {
-      "has_mysql_db": "true",
-      "mysql_init_script": "/SQL/mysql.initial.sql"
-    },
-    "access_control": {
-      "can_be_public": "no",
-      "can_be_protected": "yes"
+    "webapp": {
+      "db": {
+        "has_mysql_db": "true",
+        "mysql_init_script": "/SQL/mysql.initial.sql"
+      },
+      "access_control": {
+        "can_be_public": "no",
+        "can_be_protected": "yes"
+      }
     }
   }
 }
