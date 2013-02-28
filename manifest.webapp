@@ -25,7 +25,7 @@
     "script_path": "/scripts",
     "multi_instance": "true",
     "webapp": {
-      "langage": "php",
+      "language": "php",
       "db": {
         "has_mysql_db": "true",
         "mysql_init_script": "/SQL/mysql.initial.sql"
