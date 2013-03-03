@@ -26,6 +26,7 @@
     "multi_instance": "true",
     "webapp": {
       "language": "php",
+      "logout_url": "/?_task=logout",
       "db": {
         "has_mysql_db": "true",
         "mysql_init_script": "/SQL/mysql.initial.sql"
