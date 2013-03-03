@@ -737,7 +737,7 @@ $rcmail_config['logout_purge'] = false;
 $rcmail_config['logout_expunge'] = false;
 
 // After logout URL
-$rcmail_config['logout_url'] = 'http://yunohostlogouturl.tld';
+//$rcmail_config['logout_url'] = 'http://yunohostlogouturl.tld';
 
 // Display attached images below the message body 
 $rcmail_config['inline_images'] = true;
