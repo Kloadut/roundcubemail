@@ -1,0 +1,8 @@
+#!/bin/bash
+
+deskey=$(dd if=/dev/urandom bs=1 count=200 2> /dev/null | tr -c -d '[A-Za-z0-9]' | sed -n 's/\(.\{24\}\).*/\1/p')
+
+sed -i "s/rcmail-ynhDESkeyTOchange/$deskey/g" $APP_DIR/config/main.inc.php
+sed -i "s/yunouser/$DB_USER/g" $APP_DIR/config/db.inc.php
+sed -i "s/yunopass/$DB_PWD/g" $APP_DIR/config/db.inc.php
+sed -i "s/yunobase/$DB_NAME/g" $APP_DIR/config/db.inc.php
