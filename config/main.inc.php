@@ -406,7 +406,7 @@ $rcmail_config['no_save_sent_messages'] = false;
 // ----------------------------------
 
 // List of active plugins (in plugins/ directory)
-$rcmail_config['plugins'] = array('http_authentication', 'archive');
+$rcmail_config['plugins'] = array('http_authentication', 'archive', 'new_user_identity');
 
 // ----------------------------------
 // USER INTERFACE
@@ -684,6 +684,27 @@ $rcmail_config['ldap_public']['Verisign'] = array(
   ),
 );
 */
+
+$rcmail_config['ldap_public']['yunohost'] = array(
+  'name' => 'YunoHost users',
+  'hosts' => array('localhost'),
+  'port' => 389,
+  'user_specific' => false,
+  'base_dn' => 'ou=users,dc=yunohost,dc=org',
+  'scope' => 'list',
+  'filter' => '(objectClass=mailAccount)',
+  'hidden' => false,
+  'searchonly' => true,
+  'fieldmap' => array(
+     'name'        => 'uid',
+     'surname'     => 'sn',
+     'firstname'   => 'givenName',
+     'email'    => 'mail:*',
+  ),
+);
+
+$rcmail_config['new_user_identity_match'] = 'uid';
+$rcmail_config['new_user_identity_addressbook'] = 'yunohost';
 
 // An ordered array of the ids of the addressbooks that should be searched
 // when populating address autocomplete fields server-side. ex: array('sql','Verisign');
