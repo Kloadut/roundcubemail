@@ -463,7 +463,7 @@ $rcmail_config['sent_mbox'] = 'Sent';
 // leave blank if they should be deleted directly
 // NOTE: Use folder names with namespace prefix (INBOX. on Courier-IMAP)
 $rcmail_config['trash_mbox'] = 'Trash';
-$rcmail_config['archive_mbox'] = 'Trash';
+$rcmail_config['archive_mbox'] = 'Archive';
 
 // display these folders separately in the mailbox list.
 // these folders will also be displayed with localized names
