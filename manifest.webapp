@@ -23,13 +23,16 @@
   "yunohost": {
     "uid": "roundcube_ynh",
     "script_path": "/scripts",
+    "multi_instance": "true",
     "webapp": {
+      "language": "php",
+      "logout_url": "/?_task=logout",
       "db": {
         "has_mysql_db": "true",
         "mysql_init_script": "/SQL/mysql.initial.sql"
       },
       "access_control": {
-        "can_be_public": "no",
+        "can_be_public": "yes",
         "can_be_protected": "yes"
       }
     }
