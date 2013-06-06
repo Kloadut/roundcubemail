@@ -5,10 +5,7 @@ Roundcube Webmail
 
 ATTENTION
 ---------
-This is a beta release for testing and **NOT A STABLE version of Roundcube**.
-It's not recommended to replace an existing installation of Roundcube with
-this version. Also using a separate database for this installation is highly
-recommended.
+This is the packaged version of Roundcube for YunoHost.
 
 
 INTRODUCTION
